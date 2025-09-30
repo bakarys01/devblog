@@ -7,7 +7,7 @@
 
 A modern, Medium-inspired blog platform built with PHP, MySQL, and Docker. Features a clean, responsive design with advanced functionality for content creators and readers.
 
-![DevBlog Screenshot](https://via.placeholder.com/800x400/059669/ffffff?text=DevBlog+Platform)
+![DevBlog Screenshot](images/DevBlogImage.png)
 
 ## ✨ Features
 
@@ -50,7 +50,7 @@ A modern, Medium-inspired blog platform built with PHP, MySQL, and Docker. Featu
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/devblog.git
+   git clone https://github.com/bakarys01/devblog.git
    cd devblog
    ```
 
@@ -230,7 +230,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Bakary SIDIBE** - *Initial work* - [@yourusername](https://github.com/yourusername)
+- **Bakary SIDIBE** - *Initial work* - [@bakarys01](https://github.com/bakarys01)
+- **Email**: [bsidibe04@gmail.com](mailto:bsidibe04@gmail.com)
 
 ## 🙏 Acknowledgments
 
@@ -242,9 +243,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or issues:
 
-1. **Check** existing [Issues](https://github.com/yourusername/devblog/issues)
+1. **Check** existing [Issues](https://github.com/bakarys01/devblog/issues)
 2. **Create** a new issue with detailed information
-3. **Join** our community discussions
+3. **Contact** the author: [bsidibe04@gmail.com](mailto:bsidibe04@gmail.com)
 
 ## 🔄 Changelog
 
