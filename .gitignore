@@ -1,0 +1,132 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# PHP
+*.log
+*.cache
+vendor/
+composer.phar
+composer.lock
+.env
+.env.local
+.env.production
+.env.staging
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# Database
+*.sql.gz
+*.sql.bak
+*.dump
+*.backup
+db_backups/
+mysql_data/
+
+# Temporary Files
+tmp/
+temp/
+cache/
+logs/
+*.tmp
+*.temp
+
+# Build and Distribution
+dist/
+build/
+public/uploads/
+storage/
+
+# Version Control
+.svn/
+.hg/
+.bzr/
+
+# Package Managers
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Runtime Files
+*.pid
+*.sock
+
+# Security
+config/secrets.php
+config/production.php
+ssl/
+certificates/
+private_keys/
+*.pem
+*.key
+*.crt
+
+# Application Specific
+app/uploads/
+app/cache/
+app/logs/
+storage/app/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
+storage/logs/
+
+# Testing
+coverage/
+.phpunit.result.cache
+tests/_output/
+tests/_support/_generated/
+
+# Documentation Build
+docs/_build/
+site/
+
+# Backup Files
+*.bak
+*.backup
+*.old
+*~
+
+# Custom Application Files
+config/local.php
+app/config/local/
+uploads/
+user_uploads/
+media/uploads/
+
+# Performance and Monitoring
+*.prof
+*.trace
+xdebug.log
+
+# CI/CD
+.github/workflows/secrets/
+.gitlab-ci-local/
+
+# Local Development
+docker-compose.local.yml
+local.env
+dev.env

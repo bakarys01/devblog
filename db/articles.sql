@@ -1,0 +1,29 @@
+CREATE DATABASE IF NOT EXISTS blog_db;
+USE blog_db;
+
+CREATE TABLE IF NOT EXISTS articles (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    excerpt TEXT,
+    author VARCHAR(100) NOT NULL,
+    category VARCHAR(50) DEFAULT 'General',
+    tags VARCHAR(255) DEFAULT '',
+    views INT DEFAULT 0,
+    likes INT DEFAULT 0,
+    read_time INT DEFAULT 1,
+    featured_image VARCHAR(255) DEFAULT '',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+INSERT INTO articles (title, content, excerpt, author, category, tags, read_time, featured_image) VALUES
+('The Future of Web Development', 'Web development has evolved dramatically over the past decade. From simple static websites to complex single-page applications, the landscape continues to change at a rapid pace.\n\nThe emergence of new frameworks like React, Vue, and Angular has revolutionized how we build user interfaces. These tools have made it easier to create interactive, responsive web applications that provide seamless user experiences.\n\nLooking ahead, we can expect to see continued growth in areas like progressive web apps, serverless architecture, and AI-powered development tools. The future is bright for web developers who stay current with these trends.', 'Exploring the evolution of web development and what lies ahead for developers in this rapidly changing field.', 'Sarah Johnson', 'Technology', 'web development, future, trends, programming', 4, 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800'),
+
+('Docker Containerization Guide', 'Docker has revolutionized how we deploy and manage applications. By packaging applications with their dependencies into lightweight containers, Docker solves the "it works on my machine" problem.\n\nContainers provide consistency across development, testing, and production environments. They are portable, scalable, and efficient, making them ideal for modern application deployment.\n\nIn this comprehensive guide, we will explore Docker fundamentals, best practices for writing Dockerfiles, container orchestration with Docker Compose, and advanced topics like multi-stage builds and security considerations.\n\nWhether you are new to containerization or looking to deepen your Docker knowledge, this guide covers everything you need to know to get started with confidence.', 'A comprehensive guide to Docker containerization, covering fundamentals and advanced concepts for modern application deployment.', 'Michael Chen', 'DevOps', 'docker, containers, devops, deployment', 8, 'https://images.unsplash.com/photo-1605745341112-85968b19335b?w=800'),
+
+('Building Scalable APIs with Node.js', 'Creating robust, scalable APIs is essential for modern web applications. Node.js provides an excellent platform for building high-performance backend services.\n\nKey principles for scalable API design include proper error handling, authentication and authorization, rate limiting, caching strategies, and comprehensive documentation.\n\nWe will explore Express.js middleware, database optimization techniques, API versioning strategies, and monitoring tools that help maintain healthy APIs in production.\n\nBy following these best practices, you can build APIs that handle high traffic loads while maintaining excellent performance and reliability.', 'Learn how to build robust, scalable APIs using Node.js with best practices for performance and reliability.', 'Alex Rodriguez', 'Backend', 'nodejs, api, backend, scalability', 6, 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800'),
+
+('UI/UX Design Principles for Developers', 'Good design is not just about making things look pretty—it is about creating intuitive, accessible experiences that users love. As developers, understanding basic design principles can significantly improve the quality of our applications.\n\nKey principles include visual hierarchy, consistency, accessibility, responsive design, and user feedback. These fundamentals help create interfaces that are both beautiful and functional.\n\nWe will discuss color theory, typography, spacing, and layout techniques that developers can apply immediately. Additionally, we will cover user testing methods and design tools that integrate well with development workflows.', 'Essential UI/UX design principles every developer should know to create better user experiences.', 'Emma Wilson', 'Design', 'design, ux, ui, principles, development', 5, 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800'),
+
+('Machine Learning for Web Developers', 'Machine learning is no longer exclusive to data scientists. Modern web developers can leverage ML APIs and frameworks to add intelligent features to their applications.\n\nFrom recommendation systems to image recognition, natural language processing to predictive analytics, ML capabilities are becoming increasingly accessible through services like TensorFlow.js, Google Cloud ML, and AWS Machine Learning.\n\nThis article explores practical applications of machine learning in web development, including client-side ML with TensorFlow.js, integrating third-party ML APIs, and understanding when to use different approaches.\n\nYou do not need a PhD in mathematics to start experimenting with machine learning in your web projects.', 'Discover how web developers can integrate machine learning capabilities into their applications using modern tools and APIs.', 'David Kim', 'AI/ML', 'machine learning, ai, tensorflow, web development', 7, 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800');
